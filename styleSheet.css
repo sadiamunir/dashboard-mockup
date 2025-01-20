@@ -1,0 +1,165 @@
+body {
+  display: flex;
+}
+.icon-bar {
+  /* width: 90px; */
+  background-color: #ffffff;
+  border-right: 2px inset rgb(235, 234, 234);
+  flex:5%;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.3s ease;
+  color: rgba(94, 92, 92, 0.799);
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #a7f0f7;
+}
+
+.active {
+  background-color: #c0ebf3;
+}
+.nav input[type=search] {
+  padding: 5px 4px 5px 40px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: 1px solid rgb(227, 222, 222);
+  border-radius: 20px 20px;
+  font-size: 17px;
+  display: block;
+  background: url("./Icon Folder/searchIcon.png") no-repeat 10px center;
+  background-size: 20px;
+}
+input[type="search"]::placeholder {
+  color: #bbb;
+}
+.page-body, .top-navbar-item{
+  margin-top: 10px;
+  display: flex;
+}
+nav .fa {
+  font-size: large;
+}
+.top-navbar-icon{
+  flex: 30%;
+}
+.nav a{
+  color: #54c1d9;
+  width:100%;
+}
+.top-navbar-text {
+  float:left;
+  color: #54c1d9;
+  flex: 70%;
+
+}
+.react {
+  width: 100%;
+}
+.body {
+  flex:95%;
+  flex-direction: row;
+}
+.notification {
+  color: white;
+  text-decoration: none;
+  padding: 15px 26px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.notification .badge {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
+
+.content{
+  flex: 15%;
+  border: 1px solid #ddd;
+  display:block;
+  margin: 15px;
+  height:500px;
+  border-radius: 5px;
+  box-shadow: 0 4px 2px -2px gray;
+}
+.content ul {
+  list-style-type: none;
+  padding-inline-start: 0px;
+
+}
+.content a {
+  margin: 10px;
+   padding: 15px;
+}
+.content li{
+  padding: 15px 0;
+}
+.content li:hover {
+  background-color: #a7f0f7;
+}
+
+#search-setting{
+  width: auto;
+  font-size: 16px;
+  padding: 12px 20px 12px 10px;
+  border: 1px solid #ddd;
+  margin: 12px;
+  border-radius: 5px;
+}
+.form{
+  flex: 85%;
+  border: 1px solid #ddd;
+  display:block;
+  margin: 15px;
+  height:500px;
+  border-radius: 5px;
+  box-shadow: 0 4px 2px -2px gray;
+
+}
+input[type=text] {
+  width: 100%;
+  padding: 12px;
+  margin: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #117dac;
+  color: white;
+  padding: 12px 20px;
+  margin: 10px;
+  width:130px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: left;
+}
+
+input[type=submit]:hover {
+  background-color: #18569d;
+}
+.row {
+ margin-right: 15px !important;
+ margin-left: 15px !important;
+}
+input:hover{
+  box-shadow: 0px 1px 3px rgb(138, 204, 221);
+
+}
+@media (max-width: 800px) {
+  .body, .page-body {
+    flex-direction: column;
+  }
+}

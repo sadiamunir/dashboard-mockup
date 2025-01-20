@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>COLO!</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="./Icon Folder/reactLogo.png" type="image/icon type">
+  <link rel="stylesheet" href="styleSheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <script src="helper.js"></script>
+<div class="icon-bar">
+  <a href="#"><img class="react" src="./Icon Folder/reactLogo.png" title = "Goto Home"></a> 
+  <a href="#"><i class="fa fa-th-large" title="View Grid"></i></a> 
+  <a href="#"><i class="fa fa-users" title="View Users"></i></a> 
+  <a href="#"><i class="fa fa-car" title="Transportation Modes"></i></a>
+  <a href="#"><i class="fa fa-check-circle" title="View Verified Data"></i></a> 
+  <a href="#"><i class="fa fa-bar-chart" title="Statistics"></i></a> 
+  <a href="#"><i class="fa fa-cloud-upload" title="Upload Cloud"></i></a> 
+  <a href="#"><i class="fa fa-commenting" title="View Inbox Messages"></i></a> 
+  <a href="#"><i class="fa fa-cog" title="Settings"></i></a>
+  <a href="#" class="active"><i class="fa fa-cog" title="Compnay Settings"></i></a> 
+</div>
+<div class="body">
+  <nav class="navbar">
+    <div class="container-fluid top-navbar-item">
+      <div class="top-navbar-text">
+        <h3> Welcome COLO! </h3>
+      </div>
+      <div class="top-navbar-icon">
+        <ul class="nav navbar-nav">
+          <li><input type="search" placeholder="Search..." /></li>
+          <li><a href="#" class="notification"><i class="fa fa-envelope" title="Unread Messages"></i><span class="badge">3</span></a></li>
+          <li><a href="#" class="notification"><i class="fa fa-bell" title="New Notification"></i><span class="badge">17</span></a></a></li>
+          <li><a href="#"><i class="fa fa-user-circle" title="My Account"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="page-body">
+    <div class="content ">
+      <div>
+        <input type="text" id="search-setting" onkeyup="myFunction()" placeholder="Search Settings" title="Type in a name">
+      </div>
+      <div class="list-div">
+        <ul id="list-items">
+          <li  class="active"><a href="#">Company Settings</a></li>
+          <li><a href="#">Business Address</a></li>
+          <li><a href="#">Routes Assignment</a></li>
+          <li><a href="#">Notification Settings</a></li>
+          <li><a href="#">Roles & Permissions</a></li>
+          <li><a href="#">Profile Settings</a></li>
+          <li><a href="#">Storage Settings</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="form">
+      <form action="">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Company Settings</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <input type="text" name="code" placeholder="Short Code">
+          </div>
+          <div class="col-md-5">
+            <input type="text" name="company" placeholder="Company Name">
+          </div>
+          <div class="col-md-5">
+            <input type="text" name="owner" placeholder="Owner Name">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <input type="text" name="phone" placeholder="Phone No.">
+          </div>
+          <div class="col-md-8">
+            <input type="text" name="email" placeholder="Email">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <input type="text" name="address" placeholder="Address">
+          </div>
+          <div class="col-md-3">
+            <input type="text" name="state" placeholder="State">
+          </div>
+          <div class="col-md-3">
+            <input type="text" name="city" placeholder="City">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <input type="text" name="assigned" placeholder="Assigned Stations">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <input type="submit" value="Save Changes">
+          </div>
+        </div>
+      </form>
+    </div>
+</div>
+</div>
+</body>
+</html>
